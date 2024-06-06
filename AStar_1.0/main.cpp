@@ -31,7 +31,6 @@ std::stack<Node*> aStarAlgorithm(std::vector<std::vector<int>>& gridMap, Node& s
         sort(openList.begin(), openList.end(), MySort{});
         Node* cur = *openList.begin(); 
         openList.erase(openList.begin());
-        // bool inCloseList = closeList.find(cur) == closeList.end();
         closeList.push_back(cur);
 
         // 1. if cur is goal:
